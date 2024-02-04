@@ -1,0 +1,85 @@
+.pirata-one-regular {
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2b2b2b;
+    text-align: center;
+  }
+  
+  li {
+    display: inline-block;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  body {
+    text-align: center;
+    font-family: "Pirata One",Arial;
+    font-size: 26px;
+    color: #2b2b2b;
+    background-color: #d0d0d0;
+  }
+
+  .text-border {
+    background-color: white;
+    border: 3px solid #3c3c3c;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 0px;
+    margin-top: 0.5em;
+    border-radius: 4px;
+    display: inline-block;
+  }
+
+  #main-heading {
+    display: block;
+    margin-bottom: 1em;
+    margin-top: 1em;
+
+  }
+
+  p {
+    font-family: "Pirata One",Arial;
+    font-size: 26px;
+    color: #2b2b2b;
+  }
+  h1 {
+    font-family: "Pirata One",Arial;
+    font-size: 58px;
+    color: #2b2b2b;
+  }
+  h2 {
+    font-family: "Pirata One",Arial;
+    font-size: 40px;
+    color: #2b2b2b;
+  }
+
+  p.author-signature {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif
+  }
