@@ -4,82 +4,104 @@
     font-style: normal;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #2b2b2b;
-    text-align: center;
-  }
-  
-  li {
-    display: inline-block;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
-  }
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+  overflow: hidden;
+  background-color: #3b3b3b;
+  text-align: center;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Vertically center items */
+  justify-content: center; /* Align items to the start of the flex container */
+}
 
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+.navbar li {
+  display: inline-block;
+}
 
-  body {
-    text-align: center;
-    font-family: "Pirata One",Arial;
-    font-size: 26px;
-    color: #2b2b2b;
-    background-color: #d0d0d0;
-  }
+.navbar li .tab {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+}
+.navbar li .logo {
+  display: block;
+}
 
-  .text-border {
-    background-color: white;
-    border: 3px solid #3c3c3c;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-bottom: 0px;
-    margin-top: 0.5em;
-    border-radius: 4px;
-    display: inline-block;
-  }
+/* Change the link color to #111 (black) on hover */
+.navbar li a:hover {
+  background-color: #111;
+}
 
-  #main-heading {
-    display: block;
-    margin-bottom: 1em;
-    margin-top: 1em;
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  }
+body {
+  text-align: center;
+  font-family: "Pirata One",Arial;
+  font-size: 26px;
+  color: #2b2b2b;
+  background-color: #d0d0d0;
+}
 
-  p {
-    font-family: "Pirata One",Arial;
-    font-size: 26px;
-    color: #2b2b2b;
-  }
-  h1 {
-    font-family: "Pirata One",Arial;
-    font-size: 58px;
-    color: #2b2b2b;
-  }
-  h2 {
-    font-family: "Pirata One",Arial;
-    font-size: 40px;
-    color: #2b2b2b;
-  }
+.text-border {
+  background-color: white;
+  border: 2px solid #3c3c3c;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-bottom: 0px;
+  margin-top: 0.5em;
+  border-radius: 4px;
+  display: inline-block;
+}
 
-  p.author-signature {
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif
-  }
+#main-heading {
+  display: block;
+  margin-bottom: 1em;
+  margin-top: 1em;
+
+}
+
+img.mySlides {
+      height: 500px;
+}
+
+p {
+  font-family: "Pirata One",Arial;
+  font-size: 26px;
+  color: #2b2b2b;
+}
+h1 {
+  font-family: "Pirata One",Arial;
+  font-size: 58px;
+  color: #2b2b2b;
+}
+h2 {
+  font-family: "Pirata One",Arial;
+  font-size: 40px;
+  color: #2b2b2b;
+}
+
+p.author-signature {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+/* Styling for cards that hold shop items */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Box shadow for cards */
+  height: 275px; /* Set a fixed height for cards */
+  padding: 16px; /* Padding within each card */
+  display: inline-block;
+  text-align: center; /* Center-align text within cards */
+  background: rgb(103, 103, 103); /* Background color gradient for cards */
+  background: linear-gradient(180deg, rgb(75, 75, 75) 0%, rgba(255,255,255,1) 60%); /* Linear gradient for background */
+  border-radius: 25px; /* Add rounded corners to cards */
+}
