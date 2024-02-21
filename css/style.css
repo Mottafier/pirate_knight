@@ -105,3 +105,11 @@ p.author-signature {
   background: linear-gradient(180deg, rgb(75, 75, 75) 0%, rgba(255,255,255,1) 60%); /* Linear gradient for background */
   border-radius: 25px; /* Add rounded corners to cards */
 }
+
+textarea {
+  resize: none;
+}
+
+#message {
+  display: none;
+}
