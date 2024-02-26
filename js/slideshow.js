@@ -1,14 +1,11 @@
 // Function to display slides in a slideshow automatically
 function showSlides() {
     // Get all elements with the class "mySlides"
-    var slides = document.getElementsByClassName("mySlides");
-  
-     for(let i = 0; i < slides.length; i++){
-        slides[i].style.display="none";
-     }
-  
-     slides[slideIndex].style.display="block";
-  
+    var slides = $(".mySlides")
+    slides.css("display","none")
+    slides.eq(slideIndex).fadeIn();
+   
+     
      slideIndex = (slideIndex+1) % slides.length;
   
   

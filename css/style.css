@@ -108,6 +108,26 @@ p.author-signature {
 
 textarea {
   resize: none;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+textarea:focus{
+  border-color: "black";
+  background-color: "white";
+}
+
+button {
+  font-family: "Pirata One",Arial;
+  font-size: 20px;
+  text-align: center;
+  color: #2b2b2b;
+  border: 2px solid black;
+  border-radius: 4px;
+  line-height: 20px;
+}
+
+button:hover {
+  background-color: #d3d3d3; /* Change to gray or any other desired color */
 }
 
 #message {

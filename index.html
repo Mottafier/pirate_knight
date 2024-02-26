@@ -28,6 +28,14 @@
 
     <p class="author-signature">Site created by: David Motta <a href="mailto:david_motta@uri.edu">david_motta@uri.edu</a></p>
     
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        // Check if jQuery is loaded from CDN, if not, load it from local
+        if (typeof jQuery == 'undefined') {
+            document.write('<script src="js/jquery-3.7.1.min.js"><\/script>');
+        }
+    </script>
+    
     <script src="js/slideshow.js"></script>
 </body>
 </html>

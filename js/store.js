@@ -8,11 +8,12 @@ function StoreItem(name,price,image){
     card_count++;
     this.displayItem = function() {
         // Get the card element using its cardNum
-        var card = document.getElementsByClassName('card')[this.card_number];
-    
-        card.innerHTML += '<img src="images/'+ this.image + '" height="100">';
-        card.innerHTML += '<h3>' + this.name + '</h3><hr />';
-        card.innerHTML += '<p>' + this.price + '</p>';
+        var card = $('.card').eq(this.card_number);
+
+        card.hide().fadeIn()
+        card.append('<img src="images/' + this.image + '" height="100">');
+        card.append('<h3>' + this.name + '</h3><hr />');
+        card.append('<p>' + this.price + '</p>');
     };
 }
 
