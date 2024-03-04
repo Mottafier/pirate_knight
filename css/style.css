@@ -99,6 +99,7 @@ p.author-signature {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Box shadow for cards */
   height: 275px; /* Set a fixed height for cards */
   padding: 16px; /* Padding within each card */
+  margin-right:20px;
   display: inline-block;
   text-align: center; /* Center-align text within cards */
   background: rgb(103, 103, 103); /* Background color gradient for cards */
