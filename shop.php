@@ -1,3 +1,5 @@
+<?php include 'js/store_item.php'?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +17,7 @@
     
     <ul class="navbar">
         <li><a href="index.html" class="tab">Home</a></li>
-        <li><a href="shop.html" class="tab">Shop</a></li>
+        <li><a href="shop.php" class="tab">Shop</a></li>
         <li><a href="index.html" class="logo"><img src="images/PK_Logo_Transparent.png" width="60" height="70" alt="The Pirate Knight Logo"></a></li>
         <li><a href="about.html" class="tab">About</a></li>
         <li><a href="contact.html" class="tab">Contact</a></li>
@@ -26,11 +28,28 @@
     <p>Order Pirate Knight here!</p>    
 
     <h1 id="availability"></h1>
-    <button id="test_shop">Check Shop</button>
     <p></p>
 
     <!-- Display Shop Items Available -->
-    <div id="cards"></div>
+    <div id="cards">
+     <div class="card">
+        <img src= <?= "images/".$item1->get_image() ?> height="100">
+        <h3><?= $item1->get_name() ?></h3>
+        <h3><?= $item1->get_price() ?></h3>
+        </div>
+
+        <div class="card">
+        <img src= <?= "images/".$item2->get_image() ?> height="100">
+        <h3><?= $item2->get_name() ?></h3>
+        <h3><?= $item2->get_price() ?></h3>
+        </div>
+
+        <div class="card">
+        <img src= <?= "images/".$item3->get_image() ?> height="100">
+        <h3><?= $item3->get_name() ?></h3>
+        <h3><?= $item3->get_price() ?></h3>
+        </div>
+    </div>
 
     <h2 id="footnote"></h2>
 
@@ -42,11 +61,11 @@
         }
     </script>
 
-    <!--<script src="js/store.js"></script> -->
+    <!--<script src="js/store.js"></script> 
     <script src="js/load-html-data.js"></script>
     <script src="js/load-xml-data.js"></script>
     <script src="js/load-json-data.js"></script>
-    <script src="js/load-html2-data.js"></script>
+    <script src="js/load-html2-data.js"></script>-->
 
     
 </body>
