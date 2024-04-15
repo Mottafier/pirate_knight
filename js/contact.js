@@ -27,6 +27,7 @@ function sendMail(){
           "html_body": "<h1>" + input.val() + "</h1>",
       }
       //Call smtp2go API to send an email
+      /*
       fetch('https://api.smtp2go.com/v3/email/send', {
           method: 'POST',
           headers: {
@@ -34,6 +35,7 @@ function sendMail(){
           },
           body: JSON.stringify(msgJSON)
         })
+        */
 
         input.val('')
         
