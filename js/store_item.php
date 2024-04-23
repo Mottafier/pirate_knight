@@ -13,6 +13,9 @@ class Item
     public function get_image(){
         return $this->image;
     }
+    public function get_quantity(){
+        return $this->quantity;
+    }
     public function get_price(){
         return $this->price;
     }
@@ -32,9 +35,9 @@ class Item
     }
 
 }
-$item1 = new Item("The Pirate Knight Comic", 14.99, 1,"the_pirate_knight.png");
-$item2 = new Item("Pirate Knight Game", 13.99, 3,"PK_color.JPEG");
-$item3 = new Item("Pirate Knight Soundtrack", 15.00, 5,"PK_Logo_Transparent.png");
+//$item1 = new Item("The Pirate Knight Comic", 14.99, 1,"the_pirate_knight.png");
+//$item2 = new Item("Pirate Knight Game", 13.99, 3,"PK_color.JPEG");
+//$item3 = new Item("Pirate Knight Soundtrack", 15.00, 5,"PK_Logo_Transparent.png");
 
 
 
