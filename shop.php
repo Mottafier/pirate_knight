@@ -1,5 +1,8 @@
-<?php include 'js/store_item.php'?>
-<?php include 'js/database-connection.php'?>
+<?php include 'js/store_item.php'; ?>
+<?php 
+    include "js/navbar.php";
+    include 'js/database-connection.php';
+?>
 
 <?php 
 
@@ -32,13 +35,7 @@
 </head>
 <body>
     
-    <ul class="navbar">
-        <li><a href="index.html" class="tab">Home</a></li>
-        <li><a href="shop.php" class="tab">Shop</a></li>
-        <li><a href="index.html" class="logo"><img src="images/PK_Logo_Transparent.png" width="60" height="70" alt="The Pirate Knight Logo"></a></li>
-        <li><a href="about.html" class="tab">About</a></li>
-        <li><a href="contact.html" class="tab">Contact</a></li>
-    </ul>
+    <?php $navbar->show_navbar(); ?>
 
     <h1 class="text-border" id="main-heading">Store</h1>
     
@@ -49,30 +46,36 @@
 
     <!-- Display Shop Items Available -->
     <div id="cards">
-        <a href="js/show_item.php?name=<?= $item1->get_name() ?>">
+        
             <div class="card">
+            <a href="js/show_item.php?name=<?= $item1->get_name() ?>">
             <img src= <?= "images/".$item1->get_image() ?> height="100">
             <h3><?= $item1->get_name() ?></h3>
             <h3>Price: $<?= $item1->get_price() ?></h3>
             <h3>Quantity: <?= $item1->get_quantity() ?></h3>
+            </a>
             </div>
-        </a>
+       
 
-        <a href="js/show_item.php?name=<?= $item2->get_name() ?>">
+        
         <div class="card">
+        <a href="js/show_item.php?name=<?= $item2->get_name() ?>">
         <img src= <?= "images/".$item2->get_image() ?> height="100">
         <h3><?= $item2->get_name() ?></h3>
         <h3>Price: $<?= $item2->get_price() ?></h3>
         <h3>Quantity: <?= $item2->get_quantity() ?></h3>
-        </div></a>
+        </a>
+        </div>
 
-        <a href="js/show_item.php?name=<?= $item3->get_name() ?>">
+        
         <div class="card">
+        <a href="js/show_item.php?name=<?= $item3->get_name() ?>">
         <img src= <?= "images/".$item3->get_image() ?> height="100">
         <h3><?= $item3->get_name() ?></h3>
         <h3>Price: $<?= $item3->get_price() ?></h3>
         <h3>Quantity: <?= $item3->get_quantity() ?></h3>
-        </div></a>
+        </a>
+        </div>
     </div>
 
     <h2 id="footnote"></h2>
@@ -94,30 +97,3 @@
     
 </body>
 </html>
-
-<?php 
-
-function show_item($clicked_item){
-    header('Location: ./show_item.php');
-}
-/*
-<div class="card">
-        <img src= <?= "images/".$item1->get_image() ?> height="100">
-        <h3><?= $item1->get_name() ?></h3>
-        <h3><?= $item1->get_price() ?></h3>
-        </div>
-
-        <div class="card">
-        <img src= <?= "images/".$item2->get_image() ?> height="100">
-        <h3><?= $item2->get_name() ?></h3>
-        <h3><?= $item2->get_price() ?></h3>
-        </div>
-
-        <div class="card">
-        <img src= <?= "images/".$item3->get_image() ?> height="100">
-        <h3><?= $item3->get_name() ?></h3>
-        <h3><?= $item3->get_price() ?></h3>
-        </div>
-*/
-
-?>

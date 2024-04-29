@@ -1,9 +1,12 @@
 
-<?php include "./filter_string.php"; ?>
+<?php 
+    include "./filter_string.php";
+    include "js/navbar.php";
+?>
 
 <?php  
         session_start();
-        $username = $_SESSION["username"] ?? "";
+        $username = $_SESSION["username"] ?? "david";
 ?>
 
 <!DOCTYPE html>
@@ -21,13 +24,7 @@
 </head>
 <body>
     
-    <ul class="navbar">
-        <li><a href="index.html" class="tab">Home</a></li>
-        <li><a href="shop.html" class="tab">Shop</a></li>
-        <li><a href="index.html" class="logo"><img src="images/PK_Logo_Transparent.png" width="60" height="70" alt="The Pirate Knight Logo"></a></li>
-        <li><a href="about.html" class="tab">About</a></li>
-        <li><a href="contact.php" class="tab">Contact</a></li>
-    </ul>
+    <?php $navbar->show_navbar(); ?>
 
     <h1 class="text-border" id="main-heading">Contact</h1>
 
@@ -56,9 +53,10 @@
                 $message = "Form Submitted!";
             }
         }
+        
+        $user = $_COOKIE["user_name"] ?? "";
 
-
-        if($_COOKIE["user_name"]){
+        if($user){
             echo "Welcome back, ".htmlspecialchars( $_COOKIE["user_name"] )."!<br>";
         }
         if($message == "Form Submitted!"){
