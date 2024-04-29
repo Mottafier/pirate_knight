@@ -27,7 +27,7 @@ function sendMail(){
           "html_body": "<h1>" + input.val() + "</h1>",
       }
       //Call smtp2go API to send an email
-      /*
+      
       fetch('https://api.smtp2go.com/v3/email/send', {
           method: 'POST',
           headers: {
@@ -35,25 +35,9 @@ function sendMail(){
           },
           body: JSON.stringify(msgJSON)
         })
-        */
-
-        input.val('')
-        
-        //hide input elements
-        //let input_elements = document.getElementsByClassName('text_input');
-        $('.text_input').hide("slow",function() {
-             //Append new element that says Message Sent!
-        });
-
-        $('textarea').hide("slow",function() {
-            //Append new element that says Message Sent!
-           var new_textNode = $('<p>').text("Message Sent!");
-           $('body').append(new_textNode);
-       });
-
        
     }
 }
 
-
-$("#send_mail_button").on("click",sendMail)
+sendMail();
+console.log("hi");

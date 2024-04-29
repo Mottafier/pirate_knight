@@ -50,6 +50,28 @@
                 $message = "Correct the following errors: ";
             }
             else{
+                ?> 
+                <script>
+                    //Create JSON message for API call
+                    var msgJSON = {
+                    "api_key": "api-79768915DF8C43CA9CB6FB6365FEB067",
+                    "to": ["djm831@gmail.com"],
+                    "sender": "jayankee@sherpa-technologies.org",
+                    "subject": "Message From Customer",
+                    "text_body": "<?=$initialVal["message"]?>",
+                    "html_body": "<h1>" + "<?=$initialVal["message"]?>" + "</h1>",
+                }
+                //Call smtp2go API to send an email
+                
+                fetch('https://api.smtp2go.com/v3/email/send', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(msgJSON)
+                    })
+                </script>
+                <?php
                 $message = "Form Submitted!";
             }
         }
@@ -94,8 +116,6 @@
             document.write('<script src="js/jquery-3.7.1.min.js"><\/script>');
         }
     </script>
-
-    <script type="module" src="js/contact.js"></script>
 
     
 </body>
