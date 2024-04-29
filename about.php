@@ -19,7 +19,7 @@
 
     <h1 class="text-border" id="main-heading">About</h1>
 
-    <img src="images/about_img.png" height="200" width="150" alt="Pirate Knight image: Tirose holding a weapon">
+    <img src="./images/about_img.png" height="200" width="150" alt="Pirate Knight image: Tirose holding a weapon">
 
     <p class="text-border">Pirate Knight is a comic created by Anthony Tinaro and Owen Tierney. It follows the story of the Pirate Tirose, on her quest to avenge her fallen comrades and become the pirate king. On this site, you can buy your own copies of The Pirate Knight, check out the latest news and announcements, and contact us for any business inquiries!</p>
     
